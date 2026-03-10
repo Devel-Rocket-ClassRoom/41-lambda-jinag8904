@@ -9,7 +9,9 @@
 
 ## 1. 반복문 변수 캡처 주의사항
 
-`Action[] actions = new Action[3]`을 선언하세요. `for` 루프에서 `actions[i] = () => Console.Write(i)`로 람다식을 할당하세요. 모든 액션을 호출한 후 줄바꿈을 출력하세요.
+`Action[] actions = new Action[3]`을 선언하세요. 
+`for` 루프에서 `actions[i] = () => Console.Write(i)`로 람다식을 할당하세요. 
+모든 액션을 호출한 후 줄바꿈을 출력하세요.
 
 **실행 결과**
 
@@ -21,7 +23,10 @@
 
 ## 2. 반복문 캡처 문제 해결
 
-`Action[] actions = new Action[3]`을 선언하세요. `for` 루프 내에서 `int loopVar = i`로 별도의 지역 변수를 만들고, `actions[i] = () => Console.Write(loopVar)`로 할당하세요. 모든 액션을 호출한 후 줄바꿈을 출력하세요.
+`Action[] actions = new Action[3]`을 선언하세요. 
+`for` 루프 내에서 `int loopVar = i`로 별도의 지역 변수를 만들고, 
+`actions[i] = () => Console.Write(loopVar)`로 할당하세요. 
+모든 액션을 호출한 후 줄바꿈을 출력하세요.
 
 **실행 결과**
 
@@ -33,7 +38,9 @@
 
 ## 3. 배열 정렬에 람다식 사용
 
-`string[] names = { "김철수", "이영희", "박민수", "최지연" }` 배열을 선언하세요. `Array.Sort`에 람다식을 전달하여 이름 길이순으로 정렬하고 출력하세요. 다시 `Array.Sort`로 역순 정렬하고 출력하세요.
+`string[] names = { "김철수", "이영희", "박민수", "최지연" }` 배열을 선언하세요. 
+`Array.Sort`에 람다식을 전달하여 이름 길이순으로 정렬하고 출력하세요. 
+다시 `Array.Sort`로 역순 정렬하고 출력하세요.
 
 **실행 결과**
 
@@ -55,7 +62,9 @@
 
 ## 4. List 메서드와 람다식
 
-`List<int> numbers = new List<int> { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 }`을 선언하세요. `Find`로 첫 번째 짝수, `FindAll`로 모든 짝수, `Exists`로 8보다 큰 수 존재 여부, `TrueForAll`로 모두 양수인지, `RemoveAll`로 짝수 제거 후 남은 숫자를 출력하세요.
+`List<int> numbers = new List<int> { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 }`을 선언하세요. 
+`Find`로 첫 번째 짝수, `FindAll`로 모든 짝수, `Exists`로 8보다 큰 수 존재 여부, 
+`TrueForAll`로 모두 양수인지, `RemoveAll`로 짝수 제거 후 남은 숫자를 출력하세요.
 
 **실행 결과**
 

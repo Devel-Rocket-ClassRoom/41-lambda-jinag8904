@@ -9,7 +9,9 @@
 
 ## 1. 람다식을 매개변수로 전달
 
-`FindNumbers(Predicate<int> predicate)` 정적 메서드를 구현하세요. 이 메서드는 1부터 100까지의 숫자 중 조건을 만족하는 숫자들을 `List<int>`로 반환합니다. 3의 배수와 제곱수(1, 4, 9, 16, ...)를 각각 찾아 출력하세요.
+`FindNumbers(Predicate<int> predicate)` 정적 메서드를 구현하세요. 
+이 메서드는 1부터 100까지의 숫자 중 조건을 만족하는 숫자들을 `List<int>`로 반환합니다. 
+3의 배수와 제곱수(1, 4, 9, 16, ...)를 각각 찾아 출력하세요.
 
 **실행 결과**
 
@@ -24,7 +26,8 @@
 
 ## 2. Predicate 대리자
 
-`Predicate<int>`로 짝수 검사(`isEven`), `Func<int, bool>`로 홀수 검사(`isOdd`)를 각각 람다식으로 구현하세요. `isEven(4)`와 `isOdd(4)`를 출력하세요.
+`Predicate<int>`로 짝수 검사(`isEven`), `Func<int, bool>`로 홀수 검사(`isOdd`)를 
+각각 람다식으로 구현하세요. `isEven(4)`와 `isOdd(4)`를 출력하세요.
 
 **실행 결과**
 
@@ -37,7 +40,9 @@ False
 
 ## 3. 클로저 - 외부 변수 캡처
 
-`int factor = 2`를 선언하고 `Func<int, int> multiplier = n => n * factor`를 만드세요. `multiplier(3)`을 출력한 후, `factor`를 10으로 변경하고 다시 `multiplier(3)`을 출력하세요.
+`int factor = 2`를 선언하고 `Func<int, int> multiplier = n => n * factor`를 만드세요. 
+`multiplier(3)`을 출력한 후, `factor`를 10으로 변경하고 
+다시 `multiplier(3)`을 출력하세요.
 
 **실행 결과**
 
@@ -50,7 +55,8 @@ False
 
 ## 4. 클로저 - 캡처된 변수 수정
 
-`int count = 0`을 선언하고 `Action increment = () => count++`를 만드세요. `increment()`를 3번 호출한 후 `count`를 출력하세요.
+`int count = 0`을 선언하고 `Action increment = () => count++`를 만드세요. 
+`increment()`를 3번 호출한 후 `count`를 출력하세요.
 
 **실행 결과**
 
@@ -62,7 +68,10 @@ False
 
 ## 5. 클로저와 변수 수명 연장
 
-`CreateCounter()` 정적 메서드를 구현하세요. 이 메서드는 내부에 `int count = 0` 지역 변수를 선언하고, 호출할 때마다 `count`의 현재 값을 반환한 후 1 증가시키는 `Func<int>`를 반환합니다. `counter()`를 3번 호출하여 출력하세요.
+`CreateCounter()` 정적 메서드를 구현하세요. 
+이 메서드는 내부에 `int count = 0` 지역 변수를 선언하고, 
+호출할 때마다 `count`의 현재 값을 반환한 후 1 증가시키는 `Func<int>`를 반환합니다. 
+`counter()`를 3번 호출하여 출력하세요.
 
 **실행 결과**
 
